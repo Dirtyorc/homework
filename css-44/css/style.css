@@ -1,0 +1,25 @@
+section {
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #eddbad;
+  width: auto;
+  height: 300px;
+  margin: 2px;
+  padding: 5px;
+  overflow: auto;
+}
+
+div {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 200px;
+  height: auto;
+  background-color: #adbeed;
+  text-align: left;
+  border-radius: 20px;
+  padding: 10px 30px 40px 30px;
+  margin: 5px;
+
+  box-shadow: 0px 0px 20px 0px #000 inset;
+}
