@@ -1,0 +1,171 @@
+.container {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.orc {
+  display: flex;
+  align-items: center;
+    justify-content: center;
+    position: relative;
+  height: 800px;
+  width: 800px;
+}
+.box__scale {
+  opacity: 0;
+}
+.orc:hover .box__scale {
+  right: -300px;
+  opacity: 1;
+}
+.box__scale {
+  
+  position: absolute;
+  top: 100px;
+  left: -300px;
+  right: 600px;
+  height: 30px;
+  background: #35272665;
+
+}
+
+.box__scale{
+  transition-timing-function: ease-in;
+  transition:2s;
+}
+
+.orc__head {
+  
+  background-color: rgba(13, 151, 13, 0.863);
+  height: 300px;
+  width: 300px;
+  border-radius: 20px;
+  margin: auto;
+
+}
+/* ======брови====== */
+.orc__head_eyebrow {
+  height: 30px;
+  width: 100px;
+  margin: 6px;
+  position: relative;
+  transform: translateY(80px) translateX(15px);
+}
+
+.orc__head_eyebrow:before,
+.orc__head_eyebrow:after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  background: #F45919;
+}
+
+.orc__head_eyebrow:before {
+  left: 0;
+  transform: skew(0deg, -10deg);
+}
+
+.orc__head_eyebrow:after {
+  right: 0;
+  transform: skew(0deg, 10deg);
+}
+
+.orc__head_eyebrow {
+  animation-name: bottom-to-top;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+
+}
+
+.orc__head_eyebrow2 {
+  height: 30px;
+  width: 100px;
+  margin: 6px;
+  position: relative;
+  transform: translateY(44px) translateX(165px);
+}
+
+.orc__head_eyebrow2:before,
+.orc__head_eyebrow2:after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  background: #F45919;
+}
+
+.orc__head_eyebrow2:before {
+  left: 0;
+  transform: skew(0deg, -10deg);
+}
+
+.orc__head_eyebrow2:after {
+  right: 0;
+  transform: skew(0deg, 10deg);
+}
+
+/* ====брови туда сюда xDD==== */
+@keyframes bottom-to-top {
+  0% {
+    bottom: 0px;
+  }
+
+  100% {
+    bottom: 4%;
+  }
+}
+
+.orc__head_eyebrow2 {
+  animation-name: bottom-to-top;
+  animation-duration: 0.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+/* ====гразки====== */
+.orc__head_eye {
+  width: 100px;
+  height: 100px;
+  background: #050f18;
+  border-radius: 50%;
+  transform: translateX(20px)translateY(40px);
+}
+
+.orc__head_eyeshine {
+  width: 20px;
+  height: 20px;
+  background: #edeff1;
+  border-radius: 50%;
+  transform: translateX(22px)translateY(14px);
+}
+
+
+.orc__head_eye2 {
+  width: 100px;
+  height: 100px;
+  background: #050f18;
+  border-radius: 50%;
+  transform: translateX(166px)translateY(-56px);
+}
+
+/* ====рот=== */
+.orc__head_mouth {
+  width: 82px;
+  height: 83px;
+border: 30px;
+  border-radius: 50%;
+  box-shadow: 6px 20px 0 0 #df2b34;
+  transform: translateX(171px) translateY(-95px);
+}
+
+.orc__head_mouth:hover{
+  transform: translate(22px,-90px);
+  transition-timing-function: ease-in;
+  transition:3s;
+}
