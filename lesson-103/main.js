@@ -36,6 +36,7 @@ const users = [
 
 ]
 
-for(let i=0; i < users.length;i++)
-
-console.log(users[i].isAdmin)
+for (let i = 0; i < users.length; i++) {
+  if (users[i].isAdmin === false)    
+  console.log(users[i].isAdmin)
+}
