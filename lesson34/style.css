@@ -1,0 +1,17 @@
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  font-size: 30px ;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+td,th,caption {
+  border: 1px solid #000;
+}
+caption {
+  border-bottom: none;
+  font-weight: 700;
+}
+.weekend{
+  color: rgb(209, 13, 13);
+}
