@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>module 2 lesson 73 практика по формам</title>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+
+  <body>
+    <form class="form">
+      <fieldset class="form-group">
+        <legend class="form-group-title">авторизация</legend>
+        <label for="email" class="label"></label>
+        <input
+          id="email"
+          class="input"
+          type="email"
+          placeholder="Почта"
+          name="email"
+          required
+        />
+        <label for="password" class="label"></label>
+        <input
+          id="password"
+          class="input"
+          type="password"
+          placeholder="Пароль"
+          name="password"
+          required
+        />
+      </fieldset>
+      <fieldset class="form-group">
+        <label class="label checkbox-label">
+          <input class="checkbox" type="checkbox" name="checkbox" required />
+          <span class="checkbox-text">Запомнить меня</span>
+          <a class="forgot__pass" href="">Забыли пароль?</a>
+        </label>
+      </fieldset>
+      <button class="button">Войти</button>
+    </form>
+  </body>
+</html>
