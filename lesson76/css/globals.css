@@ -1,0 +1,56 @@
+:root {
+  --akcent: #3596ed;
+  --stroke: #d3cbd9;
+  --text-podpis: #858e8a;
+  --text-zagolovochnyy: #2c332f;
+  --text-nabornyy: #535755;
+  --bg-svetlyy: #f2f2f3;
+  --font-family: "Ubuntu", sans-serif;
+  --second-family: "Oswald", sans-serif;
+}
+
+html {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--text-zagolovochnyy);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
