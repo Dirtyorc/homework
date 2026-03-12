@@ -1,0 +1,166 @@
+.hero {
+  position: relative;
+  padding-top: 80px;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  background: url("../images/decor-long.svg");
+  width: 100%;
+  height: 48px;
+  z-index: -1;
+  bottom: 106px;
+}
+.hero_container {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+}
+
+.hero h1 {
+  margin-bottom: 40px;
+  font-family: var(--second-family), sans-serif;
+  font-weight: 600;
+  font-size: 62px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: var(--text-zagolovochnyy);
+}
+
+.hero h1 strong {
+  font-weight: 600;
+  color: var(--akcent);
+}
+
+.hero_info .text {
+  max-width: 440px;
+  margin-bottom: 160px;
+}
+
+.hero_images {
+  position: relative;
+  display: flex;
+}
+
+.hero_choose {
+  position: absolute;
+  padding: 22px;
+  border: 1px solid var(--text-nabornyy);
+  background: rgba(255, 255, 255, 0.9);
+  max-width: 160px;
+  text-align: center;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.news_container {
+  display: flex;
+  gap: 28px;
+}
+.news_article {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--stroke);
+  max-width: 284px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.news_article img {
+  display: block;
+}
+.news_info {
+  padding: 20px 20px 0;
+}
+.news_info h3 {
+  margin-bottom: 12px;
+}
+.news_date {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.news_article footer {
+  margin-top: auto;
+  padding: 0 20px 20px;
+}
+
+.news_link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--akcent);
+}
+
+.news_link::after {
+  content: "";
+  display: inline-block;
+  width: 22px;
+  height: 9px;
+  background-image: url(../images/arrow.svg);
+  transition: transform 0.2s;
+}
+.news_link:hover::after {
+  transform: translateX(5px);
+}
+.faq {
+  position: relative;
+}
+.faq::before {
+  content: "";
+  position: absolute;
+  background: url("../images/decor-long.svg");
+  width: calc(50% - 250px);
+  height: 48px;
+  z-index: -1;
+  top: 215px;
+}
+.faq_container {
+  display: flex;
+  gap: 28px;
+}
+details {
+  margin-bottom: 20px;
+  border-block: 1px solid var(--stroke);
+}
+.content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease-out;
+}
+.content-inner {
+  overflow: hidden;
+}
+
+details[open] .content {
+  grid-template-rows: 1fr;
+}
+
+details > p {
+  padding: 0 20px 20px;
+}
+details[open] summary::after {
+  transform: rotate(180deg);
+}
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+  padding: 20px;
+  cursor: pointer;
+}
+summary::after {
+  content: "";
+  width: 17px;
+  height: 22px;
+  display: inline-block;
+  background: url(../images/arrow-accordion.svg) no-repeat center;
+}
+summary::-webkit-details-marker {
+  display: none;
+}
