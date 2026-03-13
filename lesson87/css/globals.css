@@ -1,0 +1,136 @@
+:root {
+  --akcent: #3596ed;
+  --stroke: #d3cbd9;
+  --text-podpis: #858e8a;
+  --text-zagolovochnyy: #2c332f;
+  --text-nabornyy: #535755;
+  --bg-svetlyy: #f2f2f3;
+  --font-family: "Ubuntu", sans-serif;
+  --second-family: "Oswald", sans-serif;
+}
+
+html {
+  font-family: var(--font-family);
+  font-weight: 400;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--text-zagolovochnyy);
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--text-nabornyy);
+}
+.text2 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: var(--text-zagolovochnyy);
+}
+
+.button {
+  background: var(--akcent);
+  padding: 19px 32px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  transition:
+    opacity 0.2s,
+    background-color 0.2s;
+}
+
+.button:hover {
+  opacity: 0.85;
+}
+.button:active {
+  background-color: #132d44;
+}
+
+.section {
+  /* padding-top: 70px;
+  padding-bottom: 70px; */
+  margin-bottom: 140px;
+}
+
+.title_large {
+  max-width: 596px;
+  margin-bottom: 40px;
+  font-family: Oswald, sans-serif;
+  font-weight: 600;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: #2c332f;
+  font-size: 48px;
+}
+
+.title_medium {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 115%;
+  text-transform: uppercase;
+  color: var(--text-zagolovochnyy);
+}
+.text_sub {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: right;
+  color: var(--text-podpis);
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--akcent);
+  outline-offset: 2px;
+}
